@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components"
+import "@fontsource/roboto"
+import "@fontsource/roboto/100.css"
 
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -23,8 +25,9 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: "Roboto";
 	vertical-align: baseline;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -51,8 +54,36 @@ table {
 }
 
 body{
-  background: blue;
 }
+
+.button {
+    display: flex;
+    margin: 0.5rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+    min-width: 76vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+  }
+
+  @media (min-width: 600px)
+{
+  .button {
+    min-width: 20vw;
+  }
+}
+  .button:hover{
+    background:#4aaae0;
+    border: #4aaae0;
+  }
+
+
 
 `
 export default GlobalStyles

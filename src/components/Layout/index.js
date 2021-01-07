@@ -14,13 +14,17 @@ import GlobalStyles from "../../styles/global"
 
 //Componentes
 import Navbar from "../Navbar"
+import Header from "../Header"
+import Footer from "../Footer"
 
 const Layout = ({ children }) => {
   return (
     <LayoutWrapper>
       <GlobalStyles />
       <Navbar />
+      <Header />
       <MainLayout>{children}</MainLayout>
+      <Footer />
     </LayoutWrapper>
   )
 }

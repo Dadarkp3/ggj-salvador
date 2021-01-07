@@ -1,7 +1,8 @@
 import React from "react"
+import { Container } from "./styles"
 
 const Navbar = () => {
-  return <nav>Navbar</nav>
+  return <Container>Navbar</Container>
 }
 
 export default Navbar

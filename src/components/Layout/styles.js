@@ -6,5 +6,5 @@ export const LayoutWrapper = styled.section`
 `
 
 export const MainLayout = styled.main`
-  background: red;
+  //background: red;
 `
